@@ -20,39 +20,8 @@
 </div>
 
 ---
-
 <br/>
 
-```javascript
-const fajar = {
-  name        : "Fajar Laksana",
-  role        : ["Full Stack Developer", "Web Designer", "AI Prompt Engineer", "Digital Marketer"],
-  location    : "Bandung, Indonesia 🇮🇩",
-  currentWork : "VPRIV 🔭",
-  learning    : ["Blockchain ⛓️", "DeFi", "Financial Markets 💹"],
-  lookingFor  : ["Web Design Collabs", "Dev Projects", "Hedge Fund Opportunities"],
-  curious     : "Financial markets, trading, and how money moves 💰",
-  contact     : "fajarlaksana13@gmail.com",
-};
-```
-
-<br/>
-
----
-
-## ⚡ About Me
-
-**🇮🇩 Bahasa Indonesia**
-
-Halo! Saya **Fajar Laksana**, seorang **Full Stack Developer** dari Bandung yang passionate di dunia tech, desain, dan financial market. Saya suka membangun produk yang tidak hanya berfungsi, tapi juga terlihat bagus. Saat ini sedang mendalami **Blockchain** dan tertarik dengan dunia **hedge fund & investasi**.
-
-**🇬🇧 English**
-
-Hey! I'm **Fajar Laksana**, a **Full Stack Developer** from Bandung with a deep passion for tech, design, and financial markets. I love building products that don't just work — they look great too. Currently diving deep into **Blockchain** and fascinated by the world of **hedge funds & investing**.
-
-<br/>
-
----
 
 ## 🔭 What I'm Up To
 
@@ -146,38 +115,6 @@ Hey! I'm **Fajar Laksana**, a **Full Stack Developer** from Bandung with a deep 
 ![NPM](https://img.shields.io/badge/NPM-CB3837?style=flat-square&logo=npm&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 ![Trello](https://img.shields.io/badge/Trello-0052CC?style=flat-square&logo=trello&logoColor=white)
-
-<br/>
-
----
-
-## 🚀 Featured Projects
-
-| Project | Stack | Description |
-|---|---|---|
-| 🌐 **[Café Universe](https://github.com/Fajarlaksana/cafe-universe)** | Next.js · TS · Tailwind | Bandung café recommendation web app |
-| 🚗 **[TheJourney](https://github.com/Fajarlaksana/thejourney)** | Next.js · PostgreSQL · Prisma | Automotive modification media platform |
-| 📷 **[UnSplash Android](https://github.com/Fajarlaksana/UnSplashAndroid)** | Kotlin · Retrofit · ZXing | Photo browser app powered by Unsplash API |
-| 🎙️ **[Speech to Text](https://github.com/Fajarlaksana/LatSpeechToText)** | Java · Android SR API | Voice-to-text Android app (Instant App ready) |
-| 📚 **[MyLibrary](https://github.com/Fajarlaksana/MyLibrary)** | Java · ZXing · iTextPDF | QR Code generator + Text to PDF Android app |
-| 🎓 **[Edugate Guru](https://github.com/Fajarlaksana/EdugateGuru)** | Java · Material Design | Teacher management app — SMK 4 Bandung school project |
-
-<br/>
-
----
-
-## 📊 GitHub Stats
-
-<div align="center">
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=Fajarlaksana&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1117"/>
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Fajarlaksana&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0d1117"/>
-
-<br/>
-
-![GitHub Streak](https://streak-stats.demolab.com/?user=Fajarlaksana&theme=tokyonight&hide_border=true&background=0d1117)
-
-</div>
 
 <br/>
 
