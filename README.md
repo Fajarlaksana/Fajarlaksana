@@ -39,21 +39,8 @@
 
 ## 🛠 Tech Stack
 
-**Web**
 <br/>
-<img src="https://skillicons.dev/icons?i=nextjs,react,ts,js,tailwind,html,css,sass,redux&theme=dark" />
-
-**Mobile**
-<br/>
-<img src="https://skillicons.dev/icons?i=androidstudio,kotlin,java&theme=dark" />
-
-**Backend & DB**
-<br/>
-<img src="https://skillicons.dev/icons?i=nodejs,express,postgresql,mysql,mongodb,prisma,firebase,supabase&theme=dark" />
-
-**Design & Adobe**
-<br/>
-<img src="https://skillicons.dev/icons?i=figma,xd,ps,ai,pr,ae,lr&theme=dark" />
+<img src="https://skillicons.dev/icons?i=nextjs,react,ts,js,tailwind,html,css,sass,redux,androidstudio,kotlin,java,nodejs,express,postgresql,mysql,mongodb,prisma,firebase,supabase,figma,xd,ps,ai,pr,ae,lr&theme=dark" />
 
 **AI & Marketing**
 <br/>
