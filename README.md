@@ -25,17 +25,6 @@ Currently deep in **VPRIV** while learning Blockchain, DeFi, and Smart Contracts
 
 ---
 
-### 💹 Currently Exploring
-
-```
-Financial Markets   ████████████░░░░░░  60%
-Blockchain / DeFi   ███████░░░░░░░░░░░  35%
-Smart Contracts     ████░░░░░░░░░░░░░░  20%
-Hedge Fund Strat.   ██████░░░░░░░░░░░░  30%
-```
-
----
-
 ### 🛠️ Tech Stack
 
 <div align="center">
