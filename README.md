@@ -4,48 +4,44 @@
 
 </div>
 
----
+<br/>
 
-### 🧑‍💻 About
+## ⚡ `WHO THE HELL AM I`
 
-Full Stack Developer & Designer based in Bandung, Indonesia.
-Building web apps, mobile experiences, and exploring the intersection of tech & finance.
-Currently deep in **VPRIV** while learning Blockchain, DeFi, and Smart Contracts on the side.
-
----
-
-### 🔭 What I'm Up To
-
-| | |
-|---|---|
-| 🚀 **Working on** | VPRIV — main project |
-| 🌱 **Learning** | Blockchain · DeFi · Solidity |
-| 👯 **Open to** | Web Design collabs · Dev projects · Hedge Fund opportunities |
-| 💬 **Curious about** | Financial markets · Trading strategies |
+> Full Stack Developer & Designer — building things that break the mold.
+> Deep in **VPRIV**, learning Blockchain & DeFi, obsessed with how money moves.
+> Design hard. Code harder. Invest in what grows.
 
 ---
 
-### 🛠️ Tech Stack
+## 💀 `WHAT I'M UP TO`
+
+```
+[ SHIPPING  ]  ►  VPRIV ................................ ACTIVE
+[ LEARNING  ]  ►  Blockchain · DeFi · Solidity ........ IN PROGRESS
+[ HUNTING   ]  ►  Web Design Collabs · Hedge Funds .... OPEN
+[ OBSESSING ]  ►  Financial Markets · Trading ......... ALWAYS
+```
+
+---
+
+## 🛠 `ARSENAL`
 
 <div align="center">
+
 <img src="https://skillicons.dev/icons?i=nextjs,react,ts,js,tailwind,html,css,nodejs,express,postgresql,mongodb,supabase,prisma,firebase,kotlin,java,androidstudio,figma,xd,ps,ai,docker,aws,vercel,git,postman,openai,redux,sass&theme=dark&perline=15"/>
+
 </div>
 
 ---
-
-### 🤝 Let's Connect & Collaborate
-
-🇮🇩 Terbuka untuk kolaborasi Web Design, Development, Digital Marketing, dan diskusi seputar financial market & hedge fund.
-
-🇬🇧 Open to collabs in Web Design, Dev, Digital Marketing — always up for talking financial markets & hedge funds.
-
+<br/> 
 <div align="center">
 
-[![Gmail](https://img.shields.io/badge/-fajarlaksana13@gmail.com-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:fajarlaksana13@gmail.com)
-[![GitHub](https://img.shields.io/badge/-Fajarlaksana-181717?style=flat&logo=github&logoColor=white)](https://github.com/Fajarlaksana)
+[![Gmail](https://img.shields.io/badge/✖_SHOOT_A_MAIL-ff0000?style=for-the-badge&logo=gmail&logoColor=white)](mailto:fajarlaksana13@gmail.com)
+[![GitHub](https://img.shields.io/badge/✖_FOLLOW-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Fajarlaksana)
 
----
+<br/>
 
-*"Build things that matter. Design things that last. Invest in what grows."*
+**`" BUILD THINGS THAT MATTER. DESIGN THINGS THAT LAST. INVEST IN WHAT GROWS. "`**
 
 </div>
