@@ -1,165 +1,300 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 230" width="100%" height="230">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="100%" height="300" role="img" aria-label="Fajar Laksana — RPG Battle Banner">
+
 <defs>
-  <pattern id="pg" width="8" height="8" patternUnits="userSpaceOnUse">
-    <path d="M 8 0 L 0 0 0 8" fill="none" stroke="rgba(255,0,0,0.08)" stroke-width="0.5"/>
-  </pattern>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%"   stop-color="#050518"/>
+    <stop offset="70%"  stop-color="#0d0d3a"/>
+    <stop offset="100%" stop-color="#151550"/>
+  </linearGradient>
+
+  <linearGradient id="boxGrad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%"   stop-color="#1a1a7e"/>
+    <stop offset="100%" stop-color="#04041e"/>
+  </linearGradient>
+
+  <linearGradient id="goldGrad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%"   stop-color="#fff2a8"/>
+    <stop offset="45%"  stop-color="#ffd23e"/>
+    <stop offset="100%" stop-color="#e08a00"/>
+  </linearGradient>
+
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="2.5" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+
+  <clipPath id="dlgType">
+    <rect x="250" y="238" height="24" width="0">
+      <animate attributeName="width" dur="2.2s" begin="0.6s" fill="freeze" calcMode="discrete"
+        values="0;24;48;72;96;120;144;168;192;216;240;264;288;312;336;360;384;408;430"/>
+    </rect>
+  </clipPath>
 </defs>
 
-<!-- Background -->
-<rect width="800" height="230" fill="#0a0000"/>
-<rect width="800" height="230" fill="url(#pg)"/>
+<!-- ================= BACKGROUND ================= -->
+<rect width="900" height="300" fill="url(#sky)"/>
 
-<!-- Scanline red -->
-<rect width="800" height="3" fill="rgba(255,0,0,0.1)">
-  <animate attributeName="y" from="-3" to="233" dur="4s" repeatCount="indefinite"/>
-</rect>
+<!-- pixel stars -->
+<g fill="#ffffff">
+  <rect x="90"  y="26" width="3" height="3"><animate attributeName="opacity" values="0.9;0.1;0.9" dur="2.6s" repeatCount="indefinite"/></rect>
+  <rect x="200" y="48" width="2" height="2"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="3.1s" repeatCount="indefinite"/></rect>
+  <rect x="330" y="22" width="2" height="2"><animate attributeName="opacity" values="0.8;0.1;0.8" dur="1.9s" repeatCount="indefinite"/></rect>
+  <rect x="480" y="40" width="3" height="3"><animate attributeName="opacity" values="0.3;0.9;0.3" dur="2.4s" repeatCount="indefinite"/></rect>
+  <rect x="590" y="20" width="2" height="2"><animate attributeName="opacity" values="0.9;0.2;0.9" dur="3.4s" repeatCount="indefinite"/></rect>
+  <rect x="700" y="46" width="2" height="2"><animate attributeName="opacity" values="0.2;0.8;0.2" dur="2.1s" repeatCount="indefinite"/></rect>
+  <rect x="812" y="30" width="3" height="3"><animate attributeName="opacity" values="0.7;0.1;0.7" dur="2.8s" repeatCount="indefinite"/></rect>
+  <rect x="150" y="70" width="2" height="2" fill="#ffd23e"><animate attributeName="opacity" values="0.6;0.1;0.6" dur="2.2s" repeatCount="indefinite"/></rect>
+  <rect x="760" y="66" width="2" height="2" fill="#ffd23e"><animate attributeName="opacity" values="0.1;0.7;0.1" dur="2.9s" repeatCount="indefinite"/></rect>
+</g>
 
-<!-- Frame border red -->
-<rect x="6" y="6" width="788" height="218" fill="none" stroke="rgba(255,0,0,0.35)" stroke-width="1"/>
+<!-- pixel moon -->
+<g>
+  <rect x="796" y="34" width="24" height="24" fill="#fff7d6" opacity="0.9"/>
+  <rect x="792" y="38" width="4"  height="16" fill="#fff7d6" opacity="0.9"/>
+  <rect x="820" y="38" width="4"  height="16" fill="#fff7d6" opacity="0.9"/>
+  <rect x="800" y="30" width="16" height="4"  fill="#fff7d6" opacity="0.9"/>
+  <rect x="800" y="58" width="16" height="4"  fill="#fff7d6" opacity="0.9"/>
+  <rect x="802" y="40" width="5"  height="5"  fill="#e8dcae"/>
+  <rect x="810" y="48" width="4"  height="4"  fill="#e8dcae"/>
+</g>
 
-<!-- Corners — red + yellow accent -->
-<rect x="6"   y="6"   width="28" height="4"  fill="#ff0000"/>
-<rect x="6"   y="6"   width="4"  height="28" fill="#ff0000"/>
-<rect x="18"  y="18"  width="4"  height="4"  fill="#ffff00" opacity="0.8"/>
+<!-- distant pixel mountains -->
+<g fill="#0a0a30">
+  <polygon points="0,150 70,96 140,150"/>
+  <polygon points="100,150 190,80 280,150"/>
+  <polygon points="620,150 710,86 800,150"/>
+  <polygon points="740,150 830,100 900,150 900,150"/>
+</g>
+<g fill="#12124a">
+  <polygon points="40,150 130,110 220,150"/>
+  <polygon points="680,150 760,116 850,150"/>
+</g>
 
-<rect x="766" y="6"   width="28" height="4"  fill="#ff0000"/>
-<rect x="790" y="6"   width="4"  height="28" fill="#ff0000"/>
-<rect x="778" y="18"  width="4"  height="4"  fill="#ffff00" opacity="0.8"/>
+<!-- battle ground -->
+<rect x="0" y="150" width="900" height="150" fill="#0f2818"/>
+<rect x="0" y="150" width="900" height="4"   fill="#1d4a2c"/>
+<!-- pixel grass tufts -->
+<g fill="#1d4a2c">
+  <rect x="60"  y="158" width="4" height="4"/><rect x="64" y="154" width="4" height="4"/>
+  <rect x="340" y="162" width="4" height="4"/><rect x="344" y="158" width="4" height="4"/>
+  <rect x="560" y="156" width="4" height="4"/><rect x="564" y="152" width="4" height="4"/>
+  <rect x="820" y="160" width="4" height="4"/><rect x="824" y="156" width="4" height="4"/>
+</g>
 
-<rect x="6"   y="220" width="28" height="4"  fill="#ff0000"/>
-<rect x="6"   y="196" width="4"  height="28" fill="#ff0000"/>
-<rect x="18"  y="208" width="4"  height="4"  fill="#ffff00" opacity="0.8"/>
-
-<rect x="766" y="220" width="28" height="4"  fill="#ff0000"/>
-<rect x="790" y="196" width="4"  height="28" fill="#ff0000"/>
-<rect x="778" y="208" width="4"  height="4"  fill="#ffff00" opacity="0.8"/>
-
-<!-- Top red stripe -->
-<rect x="6" y="38" width="788" height="1" fill="rgba(255,0,0,0.2)"/>
-<!-- Bottom red stripe -->
-<rect x="6" y="160" width="788" height="1" fill="rgba(255,0,0,0.2)"/>
-
-<!-- Stars — red/white/yellow scattered -->
-<rect x="55"  y="24"  width="2" height="2" fill="#ff4444"><animate attributeName="opacity" values="0.9;0.05;0.9" dur="2.4s" repeatCount="indefinite"/></rect>
-<rect x="115" y="46"  width="2" height="2" fill="#ffffff"><animate attributeName="opacity" values="0.1;0.95;0.1" dur="3.2s" repeatCount="indefinite"/></rect>
-<rect x="185" y="19"  width="3" height="3" fill="#ffffff"><animate attributeName="opacity" values="0.7;0.05;0.7" dur="1.8s" repeatCount="indefinite"/></rect>
-<rect x="268" y="38"  width="2" height="2" fill="#ffff00"><animate attributeName="opacity" values="0.9;0.1;0.9" dur="2.1s" repeatCount="indefinite"/></rect>
-<rect x="335" y="22"  width="2" height="2" fill="#ff4444"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="3.5s" repeatCount="indefinite"/></rect>
-<rect x="415" y="44"  width="2" height="2" fill="#ffffff"><animate attributeName="opacity" values="0.8;0.05;0.8" dur="2.7s" repeatCount="indefinite"/></rect>
-<rect x="496" y="27"  width="2" height="2" fill="#ff4444"><animate attributeName="opacity" values="0.1;0.85;0.1" dur="1.9s" repeatCount="indefinite"/></rect>
-<rect x="562" y="15"  width="3" height="3" fill="#ffffff"><animate attributeName="opacity" values="0.7;0.1;0.7" dur="4.0s" repeatCount="indefinite"/></rect>
-<rect x="625" y="40"  width="2" height="2" fill="#ffff00"><animate attributeName="opacity" values="0.9;0.05;0.9" dur="2.2s" repeatCount="indefinite"/></rect>
-<rect x="704" y="24"  width="2" height="2" fill="#ff4444"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="3.0s" repeatCount="indefinite"/></rect>
-<rect x="80"  y="157" width="2" height="2" fill="#ffffff"><animate attributeName="opacity" values="0.6;0.05;0.6" dur="2.6s" repeatCount="indefinite"/></rect>
-<rect x="735" y="150" width="2" height="2" fill="#ffffff"><animate attributeName="opacity" values="0.1;0.8;0.1" dur="1.7s" repeatCount="indefinite"/></rect>
-<rect x="382" y="52"  width="2" height="2" fill="#ff0000"><animate attributeName="opacity" values="0.8;0.1;0.8" dur="3.3s" repeatCount="indefinite"/></rect>
-<rect x="455" y="17"  width="2" height="2" fill="#ffffff"><animate attributeName="opacity" values="0.4;0.9;0.4" dur="2.0s" repeatCount="indefinite"/></rect>
-<rect x="158" y="155" width="2" height="2" fill="#ffff00"><animate attributeName="opacity" values="0.5;0.9;0.5" dur="2.9s" repeatCount="indefinite"/></rect>
-
-<!-- ✖ NO RULES label top left -->
-<text x="20" y="28" font-family="Courier New, monospace" font-size="11" fill="#ff0000" letter-spacing="2">&#x2716; NO RULES</text>
-
-<!-- PUNK / CLASS top right -->
-<text x="780" y="21" font-family="Courier New, monospace" font-size="10" fill="#ffff00" letter-spacing="1" text-anchor="end">&#x2605; PUNK ROCK</text>
-<text x="780" y="34" font-family="Courier New, monospace" font-size="10" fill="#ffff00" letter-spacing="1" text-anchor="end">FRONT-END</text>
-
-<!-- HP bar — red -->
-<text x="20" y="180" font-family="Courier New, monospace" font-size="9" fill="#444">HP</text>
-<rect x="38" y="170" width="132" height="7" fill="rgba(255,0,0,0.1)"/>
-<rect x="38" y="170" width="0"   height="7" fill="#ff0000">
-  <animate attributeName="width" from="0" to="132" dur="2s" fill="freeze"/>
-</rect>
-
-<!-- MP bar — yellow -->
-<text x="20" y="196" font-family="Courier New, monospace" font-size="9" fill="#444">MP</text>
-<rect x="38" y="186" width="132" height="7" fill="rgba(255,255,0,0.08)"/>
-<rect x="38" y="186" width="0"   height="7" fill="#ffff00">
-  <animate attributeName="width" from="0" to="82" dur="2.5s" fill="freeze"/>
-</rect>
-
-<!-- EXP -->
-<text x="20" y="212" font-family="Courier New, monospace" font-size="9" fill="#333">EXP &#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2591;&#x2591;&#x2591;</text>
-
-<!-- ✖ decorations beside title -->
-<text font-family="Courier New, monospace" font-size="18" font-weight="bold" text-anchor="middle" x="180" fill="#ff0000" opacity="0.6">
-  <animate attributeName="y" values="100;94;100" dur="3.2s" repeatCount="indefinite"/>
-  &#x2716;
-</text>
-<text font-family="Courier New, monospace" font-size="18" font-weight="bold" text-anchor="middle" x="620" fill="#ff0000" opacity="0.6">
-  <animate attributeName="y" values="100;94;100" dur="3.2s" repeatCount="indefinite"/>
-  &#x2716;
-</text>
-
-<!-- Main title — yellow/white punk glow -->
-<text font-family="Courier New, monospace" font-size="40" font-weight="bold" text-anchor="middle" letter-spacing="8" x="400" fill="#ffff00">
-  <animate attributeName="y" values="100;94;100" dur="3.2s" repeatCount="indefinite"/>
-  <animate attributeName="fill" values="#ffff00;#ffffff;#ffff00" dur="2.2s" repeatCount="indefinite"/>
+<!-- ================= TITLE ================= -->
+<text x="452" y="62" font-family="'Courier New', monospace" font-size="42" font-weight="bold"
+      text-anchor="middle" letter-spacing="7" fill="#000" opacity="0.6">FAJAR LAKSANA</text>
+<text x="450" y="60" font-family="'Courier New', monospace" font-size="42" font-weight="bold"
+      text-anchor="middle" letter-spacing="7" fill="url(#goldGrad)" filter="url(#glow)">
   FAJAR LAKSANA
 </text>
+<text x="450" y="84" font-family="'Courier New', monospace" font-size="12" text-anchor="middle"
+      letter-spacing="5" fill="#9db8ff">&#x2726; THE FRONT-END CHRONICLES &#x2726;</text>
+<text x="450" y="104" font-family="'Courier New', monospace" font-size="10" text-anchor="middle"
+      letter-spacing="3" fill="#5a6db0">DESIGNER &#xB7; FINTECH &#xB7; FINAL BOSS OF CSS</text>
 
-<!-- Subtitle — red/white -->
-<text font-family="Courier New, monospace" font-size="12" text-anchor="middle" letter-spacing="3" x="400" fill="#ff4444">
-  <animate attributeName="y" values="126;120;126" dur="3.2s" repeatCount="indefinite"/>
-  <animate attributeName="fill" values="#ff4444;#ffffff;#ff4444" dur="3s" repeatCount="indefinite"/>
-  FRONT-END &#xB7; DESIGNER &#xB7; FINTECH
-</text>
+<!-- sword sparkle beside title -->
+<g fill="#ffd23e">
+  <rect x="216" y="46" width="3" height="12"><animate attributeName="opacity" values="0;1;0" dur="2.4s" repeatCount="indefinite"/></rect>
+  <rect x="211" y="51" width="13" height="3"><animate attributeName="opacity" values="0;1;0" dur="2.4s" repeatCount="indefinite"/></rect>
+  <rect x="676" y="46" width="3" height="12"><animate attributeName="opacity" values="0;1;0" dur="2.4s" begin="1.2s" repeatCount="indefinite"/></rect>
+  <rect x="671" y="51" width="13" height="3"><animate attributeName="opacity" values="0;1;0" dur="2.4s" begin="1.2s" repeatCount="indefinite"/></rect>
+</g>
 
-<!-- Blinking cursor -->
-<text x="626" font-family="Courier New, monospace" font-size="12" fill="#ff0000">
-  <animate attributeName="y" values="126;120;126" dur="3.2s" repeatCount="indefinite"/>
-  <animate attributeName="opacity" values="1;1;0;0;1" dur="1.1s" repeatCount="indefinite"/>
-  &#x2588;
-</text>
-
-<!-- PRESS START — red blink -->
-<text x="400" y="153" font-family="Courier New, monospace" font-size="11" fill="#ff0000" text-anchor="middle" letter-spacing="4">
-  <animate attributeName="opacity" values="1;1;0;0;1" dur="1.2s" repeatCount="indefinite"/>
-  &#x2716; NO RULES JUST SHIP &#x2716;
-</text>
-
-<!-- Walking pixel character — punk outfit (black jacket, yellow hair) -->
-<g>
-  <animateTransform attributeName="transform" type="translate" from="-90 0" to="890 0" dur="8s" repeatCount="indefinite"/>
-  <ellipse cx="11" cy="218" rx="13" ry="2.5" fill="rgba(0,0,0,0.5)"/>
-  <!-- Mohawk / spiky yellow hair -->
-  <rect x="7"  y="161" width="4"  height="8"  fill="#ffff00"/>
-  <rect x="11" y="158" width="3"  height="11" fill="#ffff00"/>
-  <rect x="14" y="162" width="3"  height="7"  fill="#ffff00"/>
-  <!-- Head -->
-  <rect x="3"  y="169" width="16" height="12" fill="#f5c088"/>
-  <!-- Eyes -->
-  <rect x="5"  y="173" width="4"  height="3"  fill="#111"/>
-  <rect x="13" y="173" width="4"  height="3"  fill="#111"/>
-  <!-- Mouth — angry/smirk -->
-  <rect x="8"  y="179" width="6"  height="2"  fill="#880000"/>
-  <!-- Leather jacket body — black with red detail -->
-  <rect x="1"  y="181" width="20" height="14" fill="#111111"/>
-  <rect x="9"  y="183" width="4"  height="10" fill="#220000"/>
-  <!-- Red collar/lapels -->
-  <rect x="1"  y="181" width="4"  height="6"  fill="#cc0000"/>
-  <rect x="17" y="181" width="4"  height="6"  fill="#cc0000"/>
-  <!-- Left arm -->
-  <rect x="-3" y="182" width="4" height="9" fill="#111111">
-    <animate attributeName="y" values="182;186;182" dur="0.38s" repeatCount="indefinite"/>
-  </rect>
-  <!-- Right arm -->
-  <rect x="21" y="186" width="4" height="9" fill="#111111">
-    <animate attributeName="y" values="186;182;186" dur="0.38s" repeatCount="indefinite"/>
-  </rect>
-  <!-- Left leg -->
-  <rect x="2"  y="195" width="7" height="10" fill="#1a1a1a">
-    <animate attributeName="y" values="195;190;195" dur="0.38s" repeatCount="indefinite"/>
-  </rect>
-  <rect x="1"  y="204" width="9" height="4" fill="#ff0000">
-    <animate attributeName="y" values="204;199;204" dur="0.38s" repeatCount="indefinite"/>
-  </rect>
-  <!-- Right leg -->
-  <rect x="13" y="190" width="7" height="10" fill="#1a1a1a">
-    <animate attributeName="y" values="190;195;190" dur="0.38s" repeatCount="indefinite"/>
-  </rect>
-  <rect x="12" y="199" width="9" height="4" fill="#ff0000">
-    <animate attributeName="y" values="199;204;199" dur="0.38s" repeatCount="indefinite"/>
+<!-- ================= ENEMY: BUG BOSS (left) ================= -->
+<!-- enemy nameplate + HP -->
+<g font-family="'Courier New', monospace">
+  <rect x="60" y="118" width="180" height="40" rx="4" fill="url(#boxGrad)" stroke="#cdd6ff" stroke-width="2"/>
+  <text x="72" y="134" font-size="11" fill="#ffffff" letter-spacing="1">BUG BOSS &#xB7; Lv.99</text>
+  <text x="72" y="150" font-size="9" fill="#8fa0e8">HP</text>
+  <rect x="92" y="142" width="130" height="8" fill="#3a0d14"/>
+  <rect x="92" y="142" width="130" height="8" fill="#ff4d5e">
+    <animate attributeName="width" calcMode="discrete" values="130;130;74;74" keyTimes="0;0.34;0.36;1" dur="4.5s" repeatCount="indefinite"/>
   </rect>
 </g>
+
+<!-- enemy sprite: pixel bug, shakes when hit -->
+<g transform="translate(120 168)">
+  <g>
+    <animateTransform attributeName="transform" type="translate" calcMode="discrete"
+      values="0 0;0 0;-5 0;5 0;-4 0;0 0;0 0" keyTimes="0;0.31;0.33;0.35;0.37;0.4;1" dur="4.5s" repeatCount="indefinite"/>
+    <!-- idle hover -->
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -3;0 0" dur="1.6s" repeatCount="indefinite"/>
+      <ellipse cx="30" cy="62" rx="26" ry="4" fill="rgba(0,0,0,0.5)"/>
+      <!-- antennae -->
+      <rect x="14" y="-6" width="4" height="12" fill="#59d959"/>
+      <rect x="42" y="-6" width="4" height="12" fill="#59d959"/>
+      <rect x="10" y="-10" width="6" height="6" fill="#a6ff6b"/>
+      <rect x="44" y="-10" width="6" height="6" fill="#a6ff6b"/>
+      <!-- body -->
+      <rect x="6"  y="6"  width="48" height="40" fill="#3fae3f"/>
+      <rect x="2"  y="14" width="56" height="24" fill="#3fae3f"/>
+      <rect x="6"  y="6"  width="48" height="6"  fill="#59d959"/>
+      <!-- belly -->
+      <rect x="14" y="30" width="32" height="14" fill="#8fe08f"/>
+      <rect x="18" y="34" width="6"  height="3"  fill="#5cb85c"/>
+      <rect x="28" y="34" width="6"  height="3"  fill="#5cb85c"/>
+      <rect x="38" y="34" width="6"  height="3"  fill="#5cb85c"/>
+      <!-- eyes: angry -->
+      <rect x="12" y="14" width="12" height="8" fill="#fff"/>
+      <rect x="36" y="14" width="12" height="8" fill="#fff"/>
+      <rect x="18" y="16" width="5"  height="6" fill="#c40016"/>
+      <rect x="37" y="16" width="5"  height="6" fill="#c40016"/>
+      <rect x="10" y="12" width="14" height="3" fill="#1c521c"/>
+      <rect x="36" y="12" width="14" height="3" fill="#1c521c"/>
+      <!-- fangs -->
+      <rect x="20" y="46" width="5" height="6" fill="#fff"/>
+      <rect x="35" y="46" width="5" height="6" fill="#fff"/>
+      <!-- legs -->
+      <rect x="-4" y="24" width="8" height="4" fill="#2a7a2a">
+        <animate attributeName="y" values="24;27;24" dur="0.8s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="56" y="24" width="8" height="4" fill="#2a7a2a">
+        <animate attributeName="y" values="27;24;27" dur="0.8s" repeatCount="indefinite"/>
+      </rect>
+      <!-- hit flash -->
+      <rect x="0" y="-12" width="62" height="66" fill="#ffffff" opacity="0">
+        <animate attributeName="opacity" calcMode="discrete" values="0;0;0.85;0;0.6;0;0" keyTimes="0;0.31;0.33;0.35;0.37;0.39;1" dur="4.5s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+  </g>
+</g>
+
+<!-- slash effect on enemy -->
+<g opacity="0">
+  <animate attributeName="opacity" calcMode="discrete" values="0;0;1;1;0;0" keyTimes="0;0.30;0.32;0.37;0.40;1" dur="4.5s" repeatCount="indefinite"/>
+  <line x1="112" y1="160" x2="196" y2="236" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+  <line x1="196" y1="164" x2="116" y2="232" stroke="#ffd23e" stroke-width="3" stroke-linecap="round"/>
+</g>
+
+<!-- damage number popping -->
+<text x="150" y="150" font-family="'Courier New', monospace" font-size="24" font-weight="bold"
+      fill="#ffd23e" stroke="#7a2b00" stroke-width="1" text-anchor="middle" opacity="0">
+  <animate attributeName="opacity" calcMode="discrete" values="0;0;1;1;0;0" keyTimes="0;0.33;0.35;0.55;0.6;1" dur="4.5s" repeatCount="indefinite"/>
+  <animate attributeName="y" values="150;150;112" keyTimes="0;0.33;0.6" dur="4.5s" repeatCount="indefinite"/>
+  -9999
+</text>
+<text x="150" y="168" font-family="'Courier New', monospace" font-size="11" font-weight="bold"
+      fill="#ff6b6b" text-anchor="middle" opacity="0">
+  <animate attributeName="opacity" calcMode="discrete" values="0;0;1;1;0;0" keyTimes="0;0.35;0.37;0.55;0.6;1" dur="4.5s" repeatCount="indefinite"/>
+  <animate attributeName="y" values="168;168;130" keyTimes="0;0.35;0.6" dur="4.5s" repeatCount="indefinite"/>
+  CRITICAL!
+</text>
+
+<!-- ================= HERO (right, dashes in to attack) ================= -->
+<g transform="translate(640 170)">
+  <g>
+    <animateTransform attributeName="transform" type="translate"
+      values="0 0;0 0;-430 0;-430 0;0 0;0 0" keyTimes="0;0.16;0.28;0.4;0.52;1" dur="4.5s" repeatCount="indefinite"/>
+    <!-- idle bob -->
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -2;0 0" dur="0.9s" repeatCount="indefinite"/>
+      <ellipse cx="20" cy="60" rx="20" ry="3.5" fill="rgba(0,0,0,0.5)"/>
+      <!-- hair -->
+      <rect x="8"  y="-4" width="24" height="8" fill="#2b3a8f"/>
+      <rect x="4"  y="0"  width="8"  height="6" fill="#2b3a8f"/>
+      <!-- headband -->
+      <rect x="6" y="4" width="28" height="4" fill="#ffd23e"/>
+      <!-- face (facing left) -->
+      <rect x="6" y="8" width="26" height="12" fill="#f5c088"/>
+      <rect x="8" y="11" width="5" height="4" fill="#111"/>
+      <rect x="18" y="11" width="5" height="4" fill="#111"/>
+      <!-- tunic -->
+      <rect x="4"  y="20" width="32" height="18" fill="#2f4fd6"/>
+      <rect x="4"  y="20" width="32" height="4"  fill="#4a6bff"/>
+      <rect x="16" y="24" width="8"  height="10" fill="#ffd23e"/>
+      <!-- belt -->
+      <rect x="4" y="38" width="32" height="4" fill="#3a2410"/>
+      <!-- sword arm forward (left) with pixel sword -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" calcMode="discrete"
+          values="0 6 24;0 6 24;-70 6 24;-70 6 24;0 6 24;0 6 24" keyTimes="0;0.26;0.30;0.38;0.44;1" dur="4.5s" repeatCount="indefinite"/>
+        <rect x="-4" y="22" width="10" height="5" fill="#f5c088"/>
+        <rect x="-26" y="20" width="22" height="6" fill="#d8dee9"/>
+        <rect x="-30" y="21" width="6"  height="4" fill="#ffffff"/>
+        <rect x="-6" y="17" width="4"  height="12" fill="#7a5a1e"/>
+      </g>
+      <!-- shield arm back -->
+      <rect x="32" y="24" width="6" height="10" fill="#f5c088"/>
+      <!-- legs -->
+      <rect x="6"  y="42" width="10" height="12" fill="#1c2a6e">
+        <animate attributeName="y" values="42;39;42" dur="0.45s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="22" y="42" width="10" height="12" fill="#1c2a6e">
+        <animate attributeName="y" values="39;42;39" dur="0.45s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="4"  y="52" width="13" height="5" fill="#3a2410">
+        <animate attributeName="y" values="52;49;52" dur="0.45s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="21" y="52" width="13" height="5" fill="#3a2410">
+        <animate attributeName="y" values="49;52;49" dur="0.45s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+  </g>
+</g>
+
+<!-- ================= HERO STATUS BOX (bottom right) ================= -->
+<g font-family="'Courier New', monospace">
+  <rect x="636" y="166" width="234" height="60" rx="4" fill="url(#boxGrad)" stroke="#cdd6ff" stroke-width="2"/>
+  <text x="650" y="184" font-size="11" fill="#ffffff" letter-spacing="1">FAJAR &#xB7; Lv.99 DEV</text>
+  <text x="650" y="201" font-size="9" fill="#8fa0e8">HP</text>
+  <rect x="672" y="193" width="150" height="8" fill="#0d2a16"/>
+  <rect x="672" y="193" width="0"   height="8" fill="#3fe06f">
+    <animate attributeName="width" from="0" to="150" dur="1.6s" fill="freeze"/>
+  </rect>
+  <text x="828" y="201" font-size="9" fill="#8fa0e8">MAX</text>
+  <text x="650" y="217" font-size="9" fill="#8fa0e8">MP</text>
+  <rect x="672" y="209" width="150" height="8" fill="#101c3a"/>
+  <rect x="672" y="209" width="0"   height="8" fill="#4a9dff">
+    <animate attributeName="width" from="0" to="112" dur="2s" fill="freeze"/>
+  </rect>
+  <text x="828" y="217" font-size="9" fill="#8fa0e8">&#x221E;</text>
+</g>
+
+<!-- ================= COMMAND MENU (right of dialog) ================= -->
+<g font-family="'Courier New', monospace" font-size="12">
+  <rect x="60" y="230" width="150" height="58" rx="4" fill="url(#boxGrad)" stroke="#cdd6ff" stroke-width="2"/>
+  <text x="94" y="246" fill="#ffffff" letter-spacing="2">CODE</text>
+  <text x="94" y="260" fill="#ffffff" letter-spacing="2">DESIGN</text>
+  <text x="94" y="274" fill="#ffffff" letter-spacing="2">DEBUG</text>
+  <text x="94" y="288" fill="#ffd23e" letter-spacing="2" transform="translate(0,-4)">SHIP IT</text>
+  <!-- cursor cycling -->
+  <text x="76" y="246" fill="#ffd23e" font-weight="bold">
+    <animate attributeName="y" calcMode="discrete" values="246;260;274;284;284" keyTimes="0;0.22;0.44;0.66;1" dur="3.6s" repeatCount="indefinite"/>
+    &#x25B6;
+  </text>
+</g>
+
+<!-- ================= DIALOG BOX ================= -->
+<g font-family="'Courier New', monospace">
+  <rect x="230" y="230" width="590" height="58" rx="4" fill="url(#boxGrad)" stroke="#cdd6ff" stroke-width="2"/>
+  <g clip-path="url(#dlgType)">
+    <text x="250" y="256" font-size="13" fill="#ffffff" letter-spacing="1">FAJAR used SHIP IT! It's super effective!</text>
+  </g>
+  <text x="250" y="278" font-size="11" fill="#8fe08f" letter-spacing="1" opacity="0">
+    <animate attributeName="opacity" to="1" begin="3s" dur="0.4s" fill="freeze"/>
+    Gained 9999 EXP &#xB7; Loot: clean commit &#xD7;42
+  </text>
+  <!-- next arrow -->
+  <text x="798" y="282" font-size="12" fill="#ffd23e">
+    <animate attributeName="opacity" values="1;1;0;0;1" dur="1s" repeatCount="indefinite"/>
+    &#x25BC;
+  </text>
+</g>
+
+<!-- EXP sparkles near dialog -->
+<g fill="#ffd23e">
+  <rect x="560" y="212" width="3" height="3"><animate attributeName="opacity" values="0;1;0" dur="1.8s" begin="3s" repeatCount="indefinite"/></rect>
+  <rect x="590" y="204" width="2" height="2"><animate attributeName="opacity" values="0;1;0" dur="2.2s" begin="3.4s" repeatCount="indefinite"/></rect>
+  <rect x="612" y="214" width="3" height="3"><animate attributeName="opacity" values="0;1;0" dur="2.0s" begin="3.8s" repeatCount="indefinite"/></rect>
+</g>
+
+<!-- PRESS START -->
+<text x="450" y="142" font-family="'Courier New', monospace" font-size="11" fill="#ffd23e"
+      text-anchor="middle" letter-spacing="6">
+  <animate attributeName="opacity" values="1;1;0;0;1" dur="1.3s" repeatCount="indefinite"/>
+  - PRESS START -
+</text>
 
 </svg>
