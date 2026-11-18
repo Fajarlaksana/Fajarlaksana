@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./header.svg" width="100%" alt="Fajar Laksana — header"/>
+<img src="./header-v2.svg" width="100%" alt="Fajar Laksana — header"/>
 
 </div>
 
